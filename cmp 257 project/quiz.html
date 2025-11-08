@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HSMF LABS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!--Header-->
+    <header id="header" class="text-center py-4">
+      <nav class="d-flex justify-content-center gap-4 mb-3">
+        <a href="homepage.html" class="nav-link">Home</a>
+      <a href="login.html" class="nav-link">Login</a>
+       <a href="quiz.html" class="nav-link">SkinQuiz</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+       <a href="#" class="nav-link">
+      <img src="ShoppingBag.JPG" alt="Shopping Bag" style="width: 25px; height: 25px;">
+    </a>
+    
+      </nav>
+      <h1 class="brand-title">HSMF LABS</h1>
+    </header>
+
+
+    <!--questionnaire-->
+    <main class="container py-4">
+      <h1 class="mb-4">HSMF Lab: Find Your Skin Type</h1>
+
+      <form id="skinForm" class="card p-4 shadow-sm">
+        <p class="text-muted mb-2">Answer the following to discover your skin type and get your personalized routine!</p>
+        <div class="step-counter mb-1">Step <span id="stepNow">1</span> of <span id="stepTotal">6</span></div>
+        <div class="progress-line mb-3"><span id="stepBar"></span></div>
+
+        <div class="form-step active" data-step="1">
+          <label class="form-label" for="name">Name</label>
+          <input class="form-control" id="name" name="name" required>
+        </div>
+
+        <!--Q1-->
+        <div class="form-step" data-step="2">
+        <fieldset class="mb-2">
+          <legend class="h6 mb-2">1. After cleansing, your skin feels...</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1-dry" value="dry" required>
+            <label class="form-check-label" for="q1-dry">Tight or Flaky</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1-normal" value="normal" required>
+            <label class="form-check-label" for="q1-normal">Comfortable</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1-oily" value="oily" required>
+            <label class="form-check-label" for="q1-oily">Shiny or oily</label>
+          </div>
+        </fieldset>
+        </div>
+
+        <!--Q2-->
+        <div class="form-step" data-step="3">
+        <fieldset class="mb-2">
+          <legend class="h6 mb-2">2. Where do you notice shine?</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="q2" id="q2-tzone" value="tzone">
+            <label class="form-check-label" for="q2-tzone">T-zone (forehead, nose, chin)</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="q2" id="q2-cheeks" value="cheeks">
+            <label class="form-check-label" for="q2-cheeks">Cheeks</label>
+          </div>
+        </fieldset>
+        </div>
+
+        <!--Q3-->
+        <div class="form-step" data-step="4">
+        <fieldset class="mb-2">
+          <legend class="h6 mb-2">3. Do you experience breakouts?</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q3" id="q3-yes" value="yes" required>
+            <label class="form-check-label" for="q3-yes">Yes</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q3" id="q3-no" value="no" required>
+            <label class="form-check-label" for="q3-no">No</label>
+          </div>
+        </fieldset>
+        </div>
+
+        <!--Q4-->
+        <div class="form-step" data-step="5">
+        <fieldset class="mb-2">
+          <legend class="h6 mb-2">4. Does your skin get red or sting easily?</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q4" id="q4-yes" value="yes" required>
+            <label class="form-check-label" for="q4-yes">Yes</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q4" id="q4-no" value="no" required>
+            <label class="form-check-label" for="q4-no">No</label>
+          </div>
+        </fieldset>
+        </div>
+
+        <!--Q5-->
+        <div class="form-step" data-step="6">
+        <fieldset class="mb-2">
+          <legend class="h6 mb-2">5. Do you have dark spots or uneven tone?</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q5" id="q5-yes" value="yes" required>
+            <label class="form-check-label" for="q5-yes">Yes</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q5" id="q5-no" value="no" required>
+            <label class="form-check-label" for="q5-no">No</label>
+          </div>
+        </fieldset>
+        </div>
+
+        <div class="d-flex gap-2 justify-content-between mt-3">
+          <button type="button" class="btn btn-secondary" id="btnPrev">Back</button>
+          <button type="button" class="btn btn-primary" id="btnNext">Next</button>
+          <button type="submit" class="btn btn-primary d-none" id="btnSubmit">Get My Routine</button>
+        </div>
+      </form>
+
+      <!--results-->
+    <section id="result" class="mt-4 d-none">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h2 class="h5" id="resultTitle">Your routine</h2>
+          <h3 class="h6 mt-3">Morning (AM)</h3>
+          <ol id="amList"></ol>
+          <h3 class="h6 mt-3">Night (PM)</h3>
+          <ol id="pmList"></ol>
+        </div>
+      </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="text-center py-4">
+      <p>&copy; 2025 HSMF LABS | All Rights Reserved</p>
+     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>

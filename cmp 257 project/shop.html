@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSMF LABS Checkout</title>
+  <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+
+  <header id="header" class="text-center py-4">
+    <nav class="d-flex justify-content-center gap-4 mb-3">
+
+
+      <a href="homepage.html" class="nav-link">Home</a>
+      <a href="login.html" class="nav-link">Login</a>
+       <a href="quiz.html" class="nav-link">SkinQuiz</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+       <a href="#" class="nav-link">
+      <img src="ShoppingBag.JPG" alt="Shopping Bag" style="width: 25px; height: 25px;">
+    </a>
+    </nav>
+    <h1 class="brand-title">HSMF LABS</h1>
+  </header>
+
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="breadcrumb">Cart / Checkout</div>
+
+    <!-- Progress Steps -->
+    <div class="progress-steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-label">Information</div>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-label">Shipping</div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-label">Payment</div>
+      </div>
+    </div>
+
+    <!-- Checkout Grid -->
+    <div class="checkout-grid">
+      <!-- Left Column -->
+      <div>
+        <!-- Contact Info -->
+        <div class="section">
+          <div class="section-header">
+            <h3 class="section-title">Contact</h3>
+            <a href="#" class="edit-link">Edit</a>
+          </div>
+          <div class="info-grid">
+            <div class="info-item">
+              <h4>Contact</h4>
+              <p>contact@yourmail.com</p>
+            </div>
+            <div class="info-item">
+              <h4>Ship to</h4>
+              <p>New Diversions, Kathmandu, 44400, Nepal</p>
+            </div>
+            <div class="info-item">
+              <h4>Method</h4>
+              <p>Flat Rate $20</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment -->
+        <div class="section payment-section">
+          <h3 class="section-title">Payment</h3>
+          <div class="secure-badge">
+            <span>🔒</span>
+            <span>All transactions are secure and encrypted.</span>
+          </div>
+
+          <div class="payment-method">
+            <div class="method-header">
+              <input type="radio" name="payment" id="credit" checked>
+              <label for="credit">Credit Card</label>
+              <div class="card-brands">
+                <span style="color: #1434CB; font-weight: bold;">VISA</span>
+                <span style="color: #EB001B; font-weight: bold;">●●</span>
+                <span style="color: #006FCF; font-weight: bold;">AMEX</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Card Number</label>
+              <input type="text" placeholder="">
+            </div>
+            <div class="form-group">
+              <label>Name on Card</label>
+              <input type="text" placeholder="">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Expiration Date (YY / MM)</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-group">
+                <label>Security Code</label>
+                <input type="text" placeholder="">
+              </div>
+            </div>
+          </div>
+
+          <div class="paypal-method">
+            <label>
+              <input type="radio" name="payment" id="paypal">
+              PayPal
+            </label>
+            <span style="color: #003087; font-weight: bold;">PayPal</span>
+          </div>
+        </div>
+
+        <!-- Billing Address -->
+        <div class="section">
+          <h3 class="section-title">Billing Address</h3>
+          <p class="billing-description">Select the address that matches your card or payment method.</p>
+
+          <div class="radio-option">
+            <input type="radio" name="billing" id="same" checked>
+            <label for="same">Same as shipping Address</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" name="billing" id="different">
+            <label for="different">Use Different Billing Address</label>
+          </div>
+
+          <div class="action-buttons">
+            <button class="btn btn-secondary">Back to Shipping</button>
+            <button class="btn btn-primary">Complete Order</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - Order Summary -->
+      <div>
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+
+          <div class="cart-item">
+            <div class="item-image">
+              <div class="item-badge">1</div>
+            </div>
+            <div class="item-details">
+              <h4>Daily Cleanser</h4>
+              <p>Get</p>
+            </div>
+            <div class="item-price">$140</div>
+          </div>
+
+          <div class="cart-item">
+            <div class="item-image">
+              <div class="item-badge">1</div>
+            </div>
+            <div class="item-details">
+              <h4>Daily Toner</h4>
+              <p>Get</p>
+            </div>
+            <div class="item-price">$200</div>
+          </div>
+
+          <div class="cart-item">
+            <div class="item-image">
+              <div class="item-badge">1</div>
+            </div>
+            <div class="item-details">
+              <h4>Moisturizer</h4>
+              <p>Get</p>
+            </div>
+            <div class="item-price">$140</div>
+          </div>
+
+          <div class="cart-item">
+            <div class="item-image">
+              <div class="item-badge">1</div>
+            </div>
+            <div class="item-details">
+              <h4>Face Mask</h4>
+              <p>Get</p>
+            </div>
+            <div class="item-price">$200</div>
+          </div>
+
+          <div class="discount-section">
+            <input type="text" placeholder="Discount Code">
+            <button>Apply Coupon</button>
+          </div>
+
+          <div class="totals">
+            <div class="total-row">
+              <span>Sub Total</span>
+              <span>$680.00</span>
+            </div>
+            <div class="total-row">
+              <span>Shipping</span>
+              <span>$20.00</span>
+            </div>
+            <div class="total-row final">
+              <span>Total</span>
+              <span>$700.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <div class="footer-contact">
+      <h4>CONTACT US</h4>
+      <p>+971 50 123 4567</p>
+      <h4>EMAIL</h4>
+      <p>hello@HSMF_LABS.com</p>
+    </div>
+    <p class="mt-3">© 2025 HSMF LABS | All Rights Reserved</p>
+  </footer>
+
+  <button id="backToTop" class="btn btn-dark back-to-top"> ↑ </button>
+</body>
+
+</html>

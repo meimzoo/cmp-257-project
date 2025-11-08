@@ -1,0 +1,120 @@
+body {
+  background-color: #F3E7DC;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #5c3d2e;
+}
+
+
+/* Header */
+#header {
+  color: rgb(118, 22, 22);
+  text-align: center;
+  padding: 25px 0;
+  border-bottom: 1px solid #e4c9b3;
+  background-color: #f9f1e7;
+  letter-spacing: 1px;
+}
+
+
+.nav-link {
+  color: #5c3d2e;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+
+
+.nav-link:hover,
+.nav-link.active {
+  color: #7b3f00;
+  text-decoration: underline;
+}
+
+.home-link {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6e472f;
+  text-decoration: none;
+}
+
+
+.brand-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h1, h2, h3, legend {
+  color: rgb(118, 22, 22);
+  margin-bottom: 0.75rem;
+}
+
+.card {
+  background-color: #dec2ad;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+form .form-check {
+  margin-bottom: 0.35rem;
+}
+form .form-label {
+  margin-bottom: 0.35rem;
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: block;
+}
+
+.step-counter {
+  color: #8a5c45;
+  font-size: 0.95rem;
+}
+
+.progress-line {
+  height: 4px;
+  background: rgba(0,0,0,0.08);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 1 rem;
+}
+
+.progress-line > span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: #6e472f;
+  transition: width 0.2s linear;
+}
+
+.btn-primary {
+  background-color: #6e472f;
+  border-color: #6e472f;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  filter: brightness(0.95);
+}
+
+.btn-secondary {
+  background-color: #c8a463;
+  border-color: #c8a463;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  filter: brightness(0.95);
+}
+
+#amList,  #pmList {
+  margin-bottom: 0.5rem;
+}
+
