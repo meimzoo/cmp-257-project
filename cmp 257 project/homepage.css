@@ -6,7 +6,6 @@ body {
   color: #5c3d2e;
 }
 
-
 /* Header */
 #header {
   color: rgb(118, 22, 22);
@@ -17,7 +16,6 @@ body {
   letter-spacing: 1px;
 }
 
-
 .nav-link {
   color: #5c3d2e;
   font-weight: 500;
@@ -25,27 +23,16 @@ body {
   transition: 0.3s;
 }
 
-
-
 .nav-link:hover,
 .nav-link.active {
   color: #7b3f00;
-  text-decoration: underline;
+  
 }
-
-.home-link {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #6e472f;
-  text-decoration: none;
-}
-
 
 .brand-title {
   font-size: 2.5rem;
   font-weight: 700;
 }
-
 
 /* Hero Section */
 .hero-section {
@@ -55,13 +42,11 @@ body {
   width: 90%;
 }
 
-
 .hero-title {
   color: #7b3f00;
   font-weight: 700;
   margin-bottom: 15px;
 }
-
 
 .hero-subtitle {
   color: #5c3d2e;
@@ -69,7 +54,6 @@ body {
   line-height: 1.6;
   margin-bottom: 30px;
 }
-
 
 .hero-btn {
   background-color: #5C3D2E;
@@ -81,11 +65,9 @@ body {
   transition: 0.3s;
 }
 
-
 .hero-btn:hover {
   background-color: #4b2f23;
 }
-
 
 /* About Section */
 .about-btn {
@@ -96,11 +78,9 @@ body {
   padding: 6px 30px;
   font-weight: 600;
   font-size: 21px;
- 
+  
  
 }
-
-
 
 
 .about-text {
@@ -109,7 +89,6 @@ body {
   font-size: 16px;
   line-height: 1.7;
 }
-
 
 /* Cards Section */
 .cards-section {
@@ -120,7 +99,6 @@ body {
   margin: 30px auto;
 }
 
-
 .custom-card {
   background-color: #fff;
   border: none;
@@ -130,17 +108,14 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .custom-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-
 .card-body {
   padding: 25px;
 }
-
 
 .card-title {
   font-weight: 600;
@@ -148,12 +123,10 @@ body {
   margin-bottom: 15px;
 }
 
-
 .card-text {
   font-size: 0.95rem;
   color: #555;
 }
-
 
 /* Steps Section */
 .steps-section {
@@ -164,14 +137,12 @@ body {
   margin: 20px auto;
 }
 
-
 .step-card {
   background: #fff;
   border-radius: 20px;
   padding: 40px 25px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
-
 
 .step-number {
   font-size: 90px;
@@ -180,18 +151,15 @@ body {
   line-height: 1;
 }
 
-
 .step-card h5 {
   color: #7b3f00;
   margin-top: 15px;
 }
 
-
 .step-card p {
   color: #5c3d2e;
   font-size: 15px;
 }
-
 
 /* Quiz Section */
 .quiz {
@@ -203,13 +171,11 @@ body {
   text-align: center;
 }
 
-
 .quiz h3 {
   color: #7b3f00;
   font-weight: 700;
   margin-bottom: 20px;
 }
-
 
 .quiz p {
   color: #5c3d2e;
@@ -218,14 +184,12 @@ body {
   line-height: 1.6;
 }
 
-
 .quiz img {
   width: 160px;
   height: auto;
   margin-top: 25px;
   border-radius: 10px;
 }
-
 
 /* Back to Top Button */
 .back-to-top {
@@ -244,7 +208,7 @@ body {
   cursor: pointer;
 }
 
-
 .back-to-top:hover {
   background-color: #4b2f23;
 }
+
