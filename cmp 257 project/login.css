@@ -6,7 +6,6 @@ body {
   color: #5c3d2e;
 }
 
-
 /* Header */
 #header {
   color: rgb(118, 22, 22);
@@ -17,7 +16,6 @@ body {
   letter-spacing: 1px;
 }
 
-
 .nav-link {
   color: #5c3d2e;
   font-weight: 500;
@@ -25,28 +23,16 @@ body {
   transition: 0.3s;
 }
 
-
-
 .nav-link:hover,
 .nav-link.active {
   color: #7b3f00;
-  text-decoration: underline;
+  
 }
-
-.home-link {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #6e472f;
-  text-decoration: none;
-}
-
 
 .brand-title {
   font-size: 2.5rem;
   font-weight: 700;
 }
-
-
 /* Login Section */
 .login-card {
   background-color: #f9f1e7;
