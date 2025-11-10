@@ -6,7 +6,6 @@ body {
   color: #5c3d2e;
 }
 
-
 /* Header */
 #header {
   color: rgb(118, 22, 22);
@@ -25,27 +24,16 @@ body {
   transition: 0.3s;
 }
 
-
-
 .nav-link:hover,
 .nav-link.active {
   color: #7b3f00;
-  text-decoration: underline;
+  
 }
-
-.home-link {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #6e472f;
-  text-decoration: none;
-}
-
 
 .brand-title {
   font-size: 2.5rem;
   font-weight: 700;
 }
-
 h1, h2, h3, legend {
   color: rgb(118, 22, 22);
   margin-bottom: 0.75rem;
@@ -117,4 +105,3 @@ form .form-label {
 #amList,  #pmList {
   margin-bottom: 0.5rem;
 }
-
