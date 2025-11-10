@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //fatmas js:
 
-/ Back to top button
+
 const backToTopBtn = document.getElementById('backToTop');
 
 window.onscroll = function() {
