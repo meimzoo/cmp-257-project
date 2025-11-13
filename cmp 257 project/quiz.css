@@ -1,39 +1,97 @@
 body {
+
   background-color: #F3E7DC;
+
   font-family: 'Poppins', sans-serif;
+
   margin: 0;
+
   padding: 0;
+
   color: #5c3d2e;
+
 }
 
+
+
+
+
 /* Header */
+
 #header {
+
   color: rgb(118, 22, 22);
+
   text-align: center;
+
   padding: 25px 0;
+
   border-bottom: 1px solid #e4c9b3;
+
   background-color: #f9f1e7;
+
   letter-spacing: 1px;
+
 }
+
+
+
 
 
 .nav-link {
+
   color: #5c3d2e;
+
   font-weight: 500;
+
   margin: 0 10px;
+
   transition: 0.3s;
+
 }
+
+
+
+
+
+
 
 .nav-link:hover,
+
 .nav-link.active {
+
   color: #7b3f00;
-  
+
+  text-decoration: underline;
+
 }
 
-.brand-title {
+
+
+.home-link {
+
   font-size: 2.5rem;
+
   font-weight: 700;
+
+  color: #6e472f;
+
+  text-decoration: none;
+
 }
+
+
+
+
+
+.brand-title {
+
+  font-size: 2.5rem;
+
+  font-weight: 700;
+
+}
+
 h1, h2, h3, legend {
   color: rgb(118, 22, 22);
   margin-bottom: 0.75rem;
@@ -104,4 +162,8 @@ form .form-label {
 
 #amList,  #pmList {
   margin-bottom: 0.5rem;
+}
+footer {
+    border-top: 1px solid #e4c9b3;
+    background-color: #f9f1e7;
 }
