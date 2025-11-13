@@ -1,1 +1,110 @@
 
+body {
+  background-color: #F3E7DC;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #5c3d2e;
+}
+
+/* Header */
+#header {
+  color: rgb(118, 22, 22);
+  text-align: center;
+  padding: 25px 0;
+  border-bottom: 1px solid #e4c9b3;
+  background-color: #f9f1e7;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #5c3d2e;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.nav-link:hover, .nav-link.active {
+  color: #7b3f00;
+  text-decoration: underline;
+}
+.brand-title { font-size: 2.5rem; font-weight: 700; }
+
+/* Product Cards (base look) */
+.product-card {
+  background-color: #d7b89c;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+.product-card img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product-card h4 { font-weight: 600; color: #5c3d2e; margin-top: 10px; }
+.product-card p { font-weight: 500; margin: 5px 0; color: #7b3f00; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(92,61,46,0.2); }
+
+/* Buttons inside cards */
+.product-card button {
+  width: 100%;
+  background-color: #c49a6c;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.product-card button:hover { background-color: #a67d52; }
+
+/* --- Product-row layout (force 4 visible cards per view) --- */
+.product-row {
+  display: flex;
+  gap: 24px;
+  overflow: hidden;      /* hide overflow so only 4 visible at a time */
+  align-items: stretch;
+  justify-content: center;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+/* Each product-card occupies 1/4 of the visible width (minus gaps) */
+.product-row .product-card {
+  flex: 0 0 calc((100% / 4) - (24px * 3 / 4));
+  max-width: calc((100% / 4) - (24px * 3 / 4));
+  min-width: 200px;
+}
+
+/* Make images scale within card */
+.product-row .product-card img { max-width: 140px; }
+
+/* Scroll buttons (left & right) */
+.scroll-all-btn {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #5c3d2e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.98;
+}
+.scroll-left { left: 22px; right: auto; }
+.scroll-right { right: 22px; left: auto; }
+.scroll-all-btn:hover { transform: translateY(-50%) scale(1.05); background-color: #7b3f00; }
