@@ -1,38 +1,95 @@
 body {
+
   background-color: #F3E7DC;
+
   font-family: 'Poppins', sans-serif;
+
   margin: 0;
+
   padding: 0;
+
   color: #5c3d2e;
+
 }
 
+
+
+
+
 /* Header */
+
 #header {
+
   color: rgb(118, 22, 22);
+
   text-align: center;
+
   padding: 25px 0;
+
   border-bottom: 1px solid #e4c9b3;
+
   background-color: #f9f1e7;
+
   letter-spacing: 1px;
+
 }
+
+
+
 
 
 .nav-link {
+
   color: #5c3d2e;
+
   font-weight: 500;
+
   margin: 0 10px;
+
   transition: 0.3s;
+
 }
+
+
+
+
+
+
 
 .nav-link:hover,
+
 .nav-link.active {
+
   color: #7b3f00;
-  
+
+  text-decoration: underline;
+
 }
 
-.brand-title {
+
+
+.home-link {
+
   font-size: 2.5rem;
+
   font-weight: 700;
+
+  color: #6e472f;
+
+  text-decoration: none;
+
+}
+
+
+
+
+
+.brand-title {
+
+  font-size: 2.5rem;
+
+  font-weight: 700;
+
 }
 
 /* Main Content */
@@ -510,32 +567,8 @@ body {
 
 /* Footer - Simplified */
 footer {
-    background: #f9f1e7;
-    padding: 40px 0 25px;
-    margin-top: 80px;
     border-top: 1px solid #e4c9b3;
-    text-align: center;
-}
-
-.footer-contact h4 {
-    font-size: 12px;
-    color: #7b3f00;
-    margin-bottom: 8px;
-    margin-top: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.footer-contact p {
-    font-size: 14px;
-    color: #5c3d2e;
-}
-
-footer p {
-    font-size: 14px;
-    color: #5c3d2e;
-    margin-top: 20px;
+    background-color: #f9f1e7;
 }
 
 /* Back to Top Button */
