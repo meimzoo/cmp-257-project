@@ -1,23 +1,39 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var scrollBtn = document.getElementById('scrollBtn');
-  var aboutSection = document.getElementById('about');
-  var backToTop = document.getElementById('backToTop');
+// Wait until the whole page is loaded
+document.addEventListener("DOMContentLoaded", () => {
 
-  // Scroll to About section
-  scrollBtn.addEventListener('click', function() {
-    aboutSection.scrollIntoView();
-  });
+  // Get main buttons and sections
+  let scrollButton = document.getElementById("scrollBtn");
+  let aboutSection = document.getElementById("about");
+  let topButton = document.getElementById("backToTop");
 
-  // Show/hide Back to Top button
-  window.addEventListener('scroll', function() {
+  // ✅ Scroll smoothly to "About" section when clicked
+  if (scrollButton && aboutSection) {
+    scrollButton.addEventListener("click", () => {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    });
+  }
+
+  // ✅ Show/Hide "Back to Top" button while scrolling
+  window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
-      backToTop.style.display = 'flex';
+      topButton.style.display = "flex";
     } else {
-      backToTop.style.display = 'none';
+      topButton.style.display = "none";
     }
   });
 
-  backToTop.addEventListener('click', function() {
-    window.scrollTo(0, 0);
-  });
+  // ✅ Scroll smoothly to top when "Back to Top" is clicked
+  if (topButton) {
+    topButton.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  // ✅ Redirect to quiz page when "Take the Skin Quiz" is clicked
+  const quizButton = document.getElementById("scrollBtn");
+  if (quizButton) {
+    quizButton.addEventListener("click", () => {
+      window.location.href = "quiz.html";
+    });
+  }
 });
